@@ -14,14 +14,14 @@ if(c%2===0) {
 
 var b=-21
 var h=7
-var a=1/2*b*h
+var s=1/2*b*h
 
-if(a>0){
-    console.log(a)
-}else if(a<0){
-    console.log(-a)
+if(s>0){
+    console.log(s)
+}else if(s<0){
+    console.log(-s)
 }else{
-    console.log('a is unknown type')
+    console.log('s is unknown type')
 }
 
 
