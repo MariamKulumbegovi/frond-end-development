@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>YourTech</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <header class="header-wrapper">
+        <a href="#"> <img class="logo" src="img/yourtech.jpg" alt="yourtech"> </a>
+        <nav class="nav-bar">
+            <ul class="ul-bar">
+                <li>
+                    <a class="navbar-li" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="navbar-li" href="#">Special offers</a>
+                </li>
+                <li>
+                    <a class="navbar-li" href="#">Cart</a>
+                </li>
+                <li>
+                    <a class="navbar-li" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex">
+        <section class="container1">
+            <div class="products">
+                <img class="productimg" src="img/hp250g7.jpeg" alt="hp250g7">
+                <em class="productname">HP 250 G7</em>
+                <em class="productprice">2199₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/microsoftsurface.png" alt="microsoftsurface">
+                <em class="productname">Microsoft Surface Laptop</em>
+                <em class="productprice">3299₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/applemcbook.png" alt="applemcbook">
+                <em class="productname">Apple MacBook Pro 13</em>
+                <em class="productprice">5699₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/0136053_lenovo-ideapad-1-81vu000jus-ice-blue_220.jpeg" alt="Lenovo IdeaPad 1 81VU000JUS ice blue">
+                <em class="productname">Lenovo IdeaPad 1 ice blue</em>
+                <em class="productprice">1599₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/0136060_lenovo-ideapad-3-81we00nkus-grey_220.png" alt="Lenovo IdeaPad 1 81VU000JUS ice blue">
+                <em class="productname">Lenovo IdeaPad 1 grey</em>
+                <em class="productprice">1599₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/0137999_lenovo-ideapad-3-i3-10th-gen-ssd_win-10-almond_220.jpeg" alt="Lenovo IdeaPad 3 i3-10th Gen SSD_Win 10 Almond">
+                <em class="productname">Lenovo IdeaPad 3 Almond</em>
+                <em class="productprice">1799₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/0132539_asus-15-1spd-x509jp-ej064-90nb0rg2-m02330_220.png" alt="ASUS 15 1SPD X509JP-EJ064 90NB0RG2-M02330">
+                <em class="productname">ASUS 15M02330</em>
+                <em class="productprice">3499₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/hp14amd.jpeg" alt="HP 14 AMD Touch_Win 10s blue">
+                <em class="productname">HP 14 AMD 10s blue</em>
+                <em class="productprice">1399₾</em>
+            </div>
+            <div class="products">
+                <img class="productimg" src="img/0136641_hp-15s-fq1100ur-2l2u4ea-indigo-blue_220.jpeg" alt="HP 15s FQ1100UR 2L2U4EA indigo blue">
+                <em class="productname">HP 15s indigo</em>
+                <em class="productprice">2699₾</em>
+            </div>
+        </section>
+        <section class="container2">
+            <h2>Input the product name</h2>
+            <div class="name">
+                <input  type="text" id="thenameinput">
+                <button type="button" onclick="nameinputer()">press here to add name</button>
+            </div>
+            <h2>Input the product price</h2>
+            <div class="price">
+                <input id="thepriceinput" type="number">
+                <button type="button" onclick="priceinputer()">press here to add price</button>
+            </div>
+            <div class="productlist">
+                <ul id=productsul>
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
