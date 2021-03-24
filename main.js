@@ -61,6 +61,7 @@ var r=[]
 
 setTimeout(() => {
     total.addEventListener('click',function () {
+        
         products.forEach(element => {
             var sum = 0;
              parskey = parseInt(element.price);
@@ -78,7 +79,6 @@ setTimeout(() => {
     })
 
    
-    
     
            
 }, 0)

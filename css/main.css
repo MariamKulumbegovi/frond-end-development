@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     background-color:#f0f0c6;
+    max-width: 1920px;
+    width: 100%;
 }
 .nav-bar {
     max-width: 1367px;
@@ -99,7 +101,25 @@ h2 {
 #finalresult {
     border-bottom: black solid;
 }
-
+.footer-wrapper{
+    display: flex;
+    background-color:rgb(240, 240, 198); 
+    height: 200px;
+    margin-bottom: -40px;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons {
+    margin-left: 20px;
+}
+.line-height{
+    line-height: 2;
+}
+.container3{
+    max-width: 1920px;
+    width: 100%;
+    margin-top: 50px;
+}
 
 @media only screen and (max-width:1100px) {
     .h2tags {
@@ -113,4 +133,3 @@ h2 {
     }
 
 }
-
