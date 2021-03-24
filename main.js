@@ -25,8 +25,8 @@ var rendering=function () {
         li.style.display='flex'
         li.style.justifyContent='space-between'
         li.style.width='351px'
-        li.style.marginLeft='120px'
         li.style.marginTop='15px'
+        li.className += "names-li"
 
     })
     thenameinput.value=''
@@ -47,29 +47,42 @@ setTimeout(() => {
 
 
 var totalp=document.getElementById('total')
+var final=document.getElementById('finalresult')
+var totals=[]
+var r=[]
 
+
+// var totalrender=function () {
+
+//     // var p=document.createElement('p')
+//     // p.innerText=finalprice
+//     // finalresult.appendChild(p)
+// }
 
 setTimeout(() => {
     total.addEventListener('click',function () {
         products.forEach(element => {
-    
-         var m=parseInt(element.price)
+            var sum = 0;
+             parskey = parseInt(element.price);
+            var t=sum += parskey;
+            totals.push(t)
         
-        
-        })
-        
+            })
+            var finalprice=totals.reduce(function(acc, val) { return acc + val; }, 0)
+            r.push(finalprice)
+            const [lastNumber] = r.slice(-1);
+            // console.log(lastNumber)
+            var p=document.createElement('p')
+             p.innerText=lastNumber
+             finalresult.appendChild(p)
     })
 
-        
+   
     
     
            
 }, 0)
 
-
-// console.log(q+=q)
-
-// var array = {"nR": 22, "nH": 7, "totB": "2", "nSR": 1, "htRb": "1"}
 
 
   
