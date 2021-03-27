@@ -71,7 +71,15 @@ h2 {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
+    
 
+}
+.background-color {
+    background-color: rgb(240, 240, 198);
+    border-radius: 10px;
+}
+.brake{
+    color:rgb(240, 240, 198) ;
 }
 
 .h2tags{
