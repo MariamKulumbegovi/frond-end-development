@@ -110,7 +110,6 @@ function display(val)
 
 function erasevalue() {
   document.getElementById('insidetext').value=''
-  console.log('clicked')
   
 }
  
