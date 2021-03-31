@@ -113,10 +113,6 @@ function erasevalue() {
   
 }
  
-function clear() {
-  let lr=document.getElementById('text')
-  text.innerText=''
-  
-}
+
       
     
