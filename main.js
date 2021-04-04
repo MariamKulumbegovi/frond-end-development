@@ -90,8 +90,17 @@
 //     result = number1 / number2;
 // }
 
-// display the result
+
 // console.log(`${number1} ${operator} ${number2} = ${result}`);
+
+
+// let numbers=getElementsById('c','div','÷','1','2','3','4','5','6','7','8','9','x','-','+','=')
+
+// numbers.addEventListener('click',function () {
+
+   
+// })
+
 
 
 function display(val)
@@ -100,19 +109,114 @@ function display(val)
 }
 
 
- function evaluation(){
-    
-    let x = document.getElementById("insidetext").value
-    let y = eval(x)
-    document.getElementById("insidetext").value = y
 
-    }
-
-function erasevalue() {
-  document.getElementById('insidetext').value=''
+function operators(opval) {
+   document.getElementById("insidetext2").value+=opval
   
 }
- 
 
+function gettonum2() {
+   document.getElementById("one").removeAttribute("onclick")
+   document.getElementById("two").removeAttribute("onclick")
+   document.getElementById("three").removeAttribute("onclick")
+   document.getElementById("four").removeAttribute("onclick")
+   document.getElementById("five").removeAttribute("onclick")
+   document.getElementById("six").removeAttribute("onclick")
+   document.getElementById("seven").removeAttribute("onclick")
+   document.getElementById("eight").removeAttribute("onclick")
+   document.getElementById("nine").removeAttribute("onclick")
+   document.getElementById("null").removeAttribute("onclick")
+   
+}
+
+
+
+
+function displaynum2() {
+   function display2(val2) {
+      document.getElementById("insidetext3").value+=val2
       
+   }
+   document.getElementById("one").addEventListener('click',function () {
+      display2('1')
+      
+   })
+   document.getElementById("two").addEventListener('click',function () {
+      display2('2')
+      
+   })
+   document.getElementById("three").addEventListener('click',function () {
+      display2('3')
+      
+   })
+   document.getElementById("four").addEventListener('click',function () {
+      display2('4')
+      
+   })
+   document.getElementById("five").addEventListener('click',function () {
+      display2('5')
+      
+   })
+   document.getElementById("six").addEventListener('click',function () {
+      display2('6')
+      
+   })
+   document.getElementById("seven").addEventListener('click',function () {
+      display2('7')
+      
+   })
+   document.getElementById("eight").addEventListener('click',function () {
+      display2('8')
+      
+   })
+   document.getElementById("nine").addEventListener('click',function () {
+      display2('9')
+      
+   })
+   document.getElementById("null").addEventListener('click',function () {
+      display2('0')
+      
+   })
+   
+}
+
+
+
+
+
+ function evaluation(){
+   let parsenum1=parseInt(document.getElementById("insidetext").value)
+   let parsenum2=parseInt(document.getElementById("insidetext3").value)
+
+    if(document.getElementById("insidetext2").value=='+'){
+     let ifplus= parsenum1 +parsenum2
+     document.getElementById("insidetext3").value=ifplus
     
+       
+    }else if(document.getElementById("insidetext2").value=='-'){
+      let ifminus= parsenum1 - parsenum2
+      document.getElementById("insidetext3").value=ifminus
+      
+
+    }else if(document.getElementById("insidetext2").value=='*'){
+      let x= parsenum1 * parsenum2
+      document.getElementById("insidetext3").value=x
+    }else if(document.getElementById("insidetext2").value=='/'){
+      let division= parsenum1 / parsenum2
+      document.getElementById("insidetext3").value=division
+    }else if(document.getElementById("insidetext2").value=='%'){
+      let div= parsenum1 % parsenum2
+      document.getElementById("insidetext3").value=div
+    }
+   
+    
+    document.getElementById('insidetext').value=''
+   document.getElementById('insidetext2').value=''
+    }
+
+
+    function erasevalue() {
+      document.getElementById('insidetext').value=''
+      document.getElementById('insidetext2').value=''
+      document.getElementById('insidetext3').value=''
+    }

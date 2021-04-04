@@ -52,19 +52,26 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
 }
-#insidetext {
-    max-width: 500px;
+#insidetext, #insidetext2,#insidetext3 {
+    max-width: 100px;
     width: 100%;
     font-size: 30px;
     color: #ffff;
-    margin-right: 20px;
     background-color: #c2625c;
     border:none;
+    text-align: start;
+}
+#insidetext {
     text-align: end;
+}
+#insidetext2{
+    max-width: 30px;
+    text-align: center;
 }
 .box1, .box2, .box3, .box4, .box5 {
     max-width: 500px;
@@ -95,7 +102,7 @@ body {
     font-size: 16px;
 }
 #equal {
-    max-width: 100px;
+    max-width: 300px;
     width: 100%;
     background-color: hsl(4deg 28% 43%);
 }
@@ -119,11 +126,14 @@ body {
     font-size: 16px;
     color: #3b2d2d;
 }
-#÷, #plus, #minus,  #x, #div, #leftbracket, #rightbracket {
+#÷, #plus, #minus,  #x, #div, #rightbracket {
     background-color:#d3808d;
 }
 #c, #null {
     background-color: hsl(4deg 28% 43%);
+}
+#null {
+    max-width: 150px;
 }
 .box5 {
     margin-bottom: 20px;
